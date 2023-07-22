@@ -1,5 +1,12 @@
+import { useActionData } from "react-router-dom";
 import FooterComponent from "./components/ui/Footer.component";
 import NavbarComponent from "./components/ui/Navbar.component";
+
+import {Routes,Route} from 'react-router-dom';
+import HomePage from "./pages/Home.page";
+import FaqPage from "./pages/Faq.page";
+import ContactUsPage from "./pages/ContactUs.page";
+import AboutUsPage from "./pages/AboutUs.page";
 
 
 
@@ -15,7 +22,12 @@ function App() {
 
        {/* Wrapper */}
        <div className="wrapper">
-        <h2>wrapper</h2>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/faq" element={<FaqPage />} />
+            <Route path="/contact-us" element={<ContactUsPage />} />
+            <Route path="/about-us" element={<AboutUsPage />} />
+          </Routes>
        </div>
 
 
@@ -30,3 +42,9 @@ function App() {
 }
 
 export default App;
+
+//Routes
+// /
+// /faq
+// /about-us
+// /contact-us
