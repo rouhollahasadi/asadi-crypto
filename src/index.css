@@ -10,5 +10,4 @@ background-color: chocolate;
 .wrapper
 {
   min-height: calc(100vh - 96px);
-  background-color: green;
 }
