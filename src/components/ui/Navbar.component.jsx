@@ -8,7 +8,10 @@ import './Navbar.css';
 const NavbarComponent = () => {
     const btnToggleRef = useRef();
     const toggleMenu =() => {
-        btnToggleRef.current.click();
+        if(window.innerWidth<992){
+            btnToggleRef.current.click();
+        }
+        
     }
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
