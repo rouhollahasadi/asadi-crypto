@@ -11,7 +11,7 @@ const FooterComponent = () => {
             <span>
                 Show Crypto
             </span>
-            <span class="d-none d-md-inline ms-2">
+            <span className="d-none d-md-inline ms-2">
                 All rights reserved
             </span>
         </footer>
