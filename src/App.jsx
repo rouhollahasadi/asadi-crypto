@@ -7,6 +7,7 @@ import HomePage from "./pages/Home.page";
 import FaqPage from "./pages/Faq.page";
 import ContactUsPage from "./pages/ContactUs.page";
 import AboutUsPage from "./pages/AboutUs.page";
+import CoinPage from "./pages/Coin.page";
 
 
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/about-us" element={<AboutUsPage />} />
+            <Route path="/coin/:id" element={<CoinPage />} />
           </Routes>
        </div>
 
