@@ -11,3 +11,7 @@ background-color: chocolate;
 {
   min-height: calc(100vh - 96px);
 }
+.about-img,.contact-img{
+  width: 350px;
+  height: 350px;
+}
